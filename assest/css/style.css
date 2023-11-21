@@ -1,0 +1,23 @@
+*{
+    margin: 0px;
+    padding: 0 ;
+    box-sizing: border-box;
+}
+html{
+    background-color: black;
+}
+body{
+    background-color: white;
+border: 1px solid red;
+height: 600px;
+margin-top: 150px;
+margin-bottom: 20px;
+}
+header{
+    border: 1px solid blue;
+    height: 70px;
+    background-color: #FF4500;
+}
+span{color: aliceblue;
+
+}
