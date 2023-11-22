@@ -2,22 +2,42 @@
     margin: 0px;
     padding: 0 ;
     box-sizing: border-box;
+    /*border: 1px solid red;*/
 }
-html{
-    background-color: black;
+.clearfix :after{
+    content:"";
+    display: table;
+    clear: both;
 }
 body{
     background-color: white;
-border: 1px solid red;
-height: 600px;
-margin-top: 150px;
-margin-bottom: 20px;
 }
 header{
     border: 1px solid blue;
     height: 70px;
     background-color: #FF4500;
+   
+
 }
 span{color: aliceblue;
 
+}
+main .class{
+    float: left;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
+    padding-bottom: 50px; 
+}
+main .class.pic{
+    display: block;
+}
+.marc{
+    color: grey;
+}
+ul{
+    list-style-type: none;
+}
+.prix{
+    color: red;
 }
