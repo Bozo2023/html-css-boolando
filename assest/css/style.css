@@ -1,13 +1,8 @@
 *{
-    margin: 0px;
+    margin: 0;
     padding: 0 ;
     box-sizing: border-box;
-    /*border: 1px solid red;*/
-}
-.clearfix :after{
-    content:"";
-    display: table;
-    clear: both;
+
 }
 body{
     background-color: white;
@@ -15,29 +10,104 @@ body{
 header{
     border: 1px solid blue;
     height: 70px;
-    background-color: #FF4500;
-   
+    background-color: #eb4002da;
+    display: flex;
+    justify-content: center;
+  
+}
+nav{
+    width: 80%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+ align-items: center;
 
+ 
 }
-span{color: aliceblue;
+.catego{
+    display: flex;
+    text-transform: capitalize;
+    font-size: 20px;  
+}
+#logo{
+    cursor: pointer;
+}
+span{
+    color: aliceblue;
+}
+ .catego ul,
+ .icon ul {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+}
+.catego li,
+{
+    display: inline;
+}
+.catego a,
+.icon {
+    text-decoration: none;
+    color: aliceblue;
+}
+.container{
+    width: 80%;
+    border: 1px solid black;
+display: flex;
+gap: 20px;
+flex-wrap: wrap;
+justify-content: center;
+margin:0 auto;
+padding-top: 70px;
+}
 
-}
-main .class{
-    float: left;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 20px;
-    padding-bottom: 50px; 
-}
-main .class.pic{
-    display: block;
-}
-.marc{
-    color: grey;
-}
-ul{
+.pic ul{
     list-style-type: none;
 }
-.prix{
+.discount{
+    background-color: red;
+}
+.tipe{
+    background-color: green;
+}
+.pic{
+    position: relative;
+}
+.qualif{
+    position: absolute;
+    top:650px;
+    left: 5px;
+}
+.pic svg{
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 15px;
+    right: 0px;
+}
+.price{
+    display:flex;
+    gap: 5px;
+}
+.real{
     color: red;
 }
+.sconto{
+    text-decoration:line-through
+}
+.pic svg:hover {
+ background-color: red;
+
+}
+.class .pic .one :last-child{
+    display: none;
+}
+.pic .one:hover .class .pic .one :last-child{
+    display: block;
+    cursor: pointer;
+}
+.class .pic .one:hover .one :first-child{
+    display: none;
+}
+
